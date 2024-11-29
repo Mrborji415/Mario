@@ -1,0 +1,170 @@
+#mario {
+    background-image: url(Resources/stay.png);
+    background-size: cover;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    transition: all .2s ease ;
+    z-index: 100;
+    margin-top: 450px;
+}
+#board {
+    background-image: url(Resources/wrerdfg.jpg);
+    background-size: contain;
+    height: 817px;
+    width: 16950px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+    z-index: 1;
+}
+.tree{
+    background-image: url(Resources/tree.png);
+    background-size: contain;
+    height: 250px;
+    width: 242px;
+    position: absolute;
+}
+#enemy{
+    background-image: url(Resources/enemy.png);
+    background-size: contain;
+    height: 146px;
+    width: 152px;
+    position: absolute;
+    z-index: 31;
+    transition: all .5 ease;
+}
+body{
+    overflow-x: hidden;
+}
+.fire{
+    background-image: url(Resources/fire1.webp);
+    background-size: contain;
+    height: 231px;
+    width: 242px;
+    position: absolute;
+    z-index: 20;
+}
+@keyframes move{
+    0%,100%{
+        background-image: url(Resources/Newfolder/movepro1.png);
+        background-size: cover;
+    }
+    11.111%{
+        background-image: url(Resources/Newfolder/movepro2.png);
+        background-size: cover;
+    }
+    22.222%{
+        background-image: url(Resources/Newfolder/movepro3.png);
+        background-size: cover;
+    }
+    33.333%{
+        background-image: url(Resources/Newfolder/movepro4.png);
+        background-size: cover;
+    }
+    44.444%{
+        background-image: url(Resources/Newfolder/movepro5.png);
+        background-size: cover;
+    }
+    55.555%{
+        background-image: url(Resources/Newfolder/movepro6.png);
+        background-size: cover;
+    }
+    66.666%{
+        background-image: url(Resources/Newfolder/movepro7.png);
+        background-size: cover;
+    }
+    77.777%{
+        background-image: url(Resources/Newfolder/movepro8.png);
+        background-size: cover;
+    }
+    88.888%{
+        background-image: url(Resources/Newfolder/movepro9.png);
+        background-size: cover;
+    }
+}
+
+
+.heart {  
+    width: 80px;
+    aspect-ratio: 1;
+    background: linear-gradient(#dc1818 0 0) bottom/100% 0% no-repeat #ff0000;
+    -webkit-mask:
+        radial-gradient(circle at 60% 65%, #000 62%, #0000 65%) top left,
+        radial-gradient(circle at 40% 65%, #000 62%, #0000 65%) top right,
+        linear-gradient(to bottom left, #000 42%,#0000 43%) bottom left,
+        linear-gradient(to bottom right,#000 42%,#0000 43%) bottom right;
+    -webkit-mask-size: 50% 50%;
+    -webkit-mask-repeat: no-repeat;
+    /* animation: l19 2s infinite linear; */
+    z-index: 20;
+    transition: all 1s ease-in-out;
+}
+.lifebar{
+    height: 100px;
+    width: 400px;
+    background-color: white;
+    z-index: 30;
+    position: absolute;
+    border-radius: 100px;
+}
+#lifepercent{
+    background-color: rgb(252, 64, 64);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 80px;
+    border-radius: 100px;
+    transition: all 1s linear;
+
+}
+.refresh{
+    margin-left: 600px;
+    height: 100px;
+    width: 400px;
+    font-size: 80px;
+    border-radius: 80px;
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    background-color: antiquewhite;
+    z-index: 30;
+}
+#point{
+    position: absolute;
+    z-index: 50;
+    margin-left: 400px;
+    margin-top: -20px;
+    font-size: 120px;
+    float: right;
+}
+#lose{
+    position: absolute;
+    z-index: 50;
+    margin-left: 890px;
+    margin-top: -10px;
+    font-size: 120px;
+    float: right;
+}
+#health-bar{
+    /* position: absolute; */
+    top: 10px; 
+    display: flex;
+    float: right;
+    margin-left: 5130;
+    background-color: white;
+}
+#info{
+    margin-top: 10px;
+}
+#sun{
+    background-color: yellow;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    margin-left: 1050px;
+    position: absolute;
+}
